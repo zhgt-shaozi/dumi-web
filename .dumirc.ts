@@ -2,7 +2,7 @@ import { defineConfig } from 'dumi';
 
 export default defineConfig({
   outputPath: 'docs-dist',
-  base: '/',
+  base: '/dumi-web',
   // apiParser: {}, // 开启 自动 API 表格
   // resolve: {
   //   // 配置入口文件路径，API 解析将从这里开始
@@ -21,7 +21,7 @@ export default defineConfig({
     // footer: '',
     // 右上角拓展链接
     socialLinks: {
-      github: 'https://github.com/umijs/dumi',
+      github: 'https://github.com/zhgt-shaozi/dumi-web',
       // zhihu: 'https://xxxx',
       yuque: 'https://www.yuque.com/u12312393/olga7q',
     },

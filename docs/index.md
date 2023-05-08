@@ -7,9 +7,9 @@ hero:
     <small style="opacity: 0.7;">Vue 版本请访问 <a href="https://v1.d.umijs.org" style="color: #1677ff;" target="_blank">v1.d.umijs.org</a></small>
   actions:
     - text: 拓展组件
-      link: /
+      link: /expand-com
     - text: GitHub
-      link: /
+      link: https://github.com/zhgt-shaozi/dumi-web
 features:
   - title: 相关技术
     emoji: 💎
@@ -21,5 +21,3 @@ features:
     emoji: 🙃
     description: 可能要维护好久...
 ---
-
-
