@@ -14,7 +14,7 @@ jobs:
       # 文档编译命令，如果是 react 模板需要修改为 npm run docs:build
       - run: yarn build
       - name: Deploy
-        uses: peaceiris/actions-gh-pages@v4
+        uses: peaceiris/actions-gh-pages@v3 # 这是个链接，可以直接 ctrl + 左键跳转至对应的 GitHub 网址
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           # 文档目录，如果是 react 模板需要修改为 docs-dist
