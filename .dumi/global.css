@@ -1,0 +1,21 @@
+/** 全局引入 **/
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.dumi-default-header {
+  /* z-index: 10; */
+  z-index: 16 !important;
+}
+
+.dumi-default-doc-layout > main {
+  /* max-width: 1392px; */
+  max-width: 1520px !important;
+}
+
+.markdown table td > a:not(:last-child)::after {
+  margin: 0 6px 0 8px;
+  color: #bbb;
+  content: '|';
+  pointer-events: none;
+}
