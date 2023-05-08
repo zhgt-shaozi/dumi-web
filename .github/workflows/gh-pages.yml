@@ -7,7 +7,7 @@ on:
 
 jobs:
   deploy:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest # 使用 runner 最新版，防止 actions 运行不起来
     steps:
       - uses: actions/checkout@v2
       - run: npm install
