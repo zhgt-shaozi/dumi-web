@@ -9,7 +9,7 @@ hero:
     - text: 拓展组件
       link: /expand-com
     - text: GitHub
-      link: https://github.com/zhgt-shaozi/dumi-web
+      link: https://github.com/zhgtt/dumi-web
 features:
   - title: 相关技术
     emoji: 💎
