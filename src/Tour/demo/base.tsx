@@ -1,6 +1,7 @@
 import { EllipsisOutlined } from '@ant-design/icons';
 import type { TourProps } from 'antd';
-import { Button, Divider, Space, Tour } from 'antd';
+import { Button, ConfigProvider, Divider, Space, Tour } from 'antd';
+import zhCN from 'antd/locale/zh_CN';
 import React, { useRef, useState } from 'react';
 
 const App: React.FC = () => {
@@ -14,13 +15,6 @@ const App: React.FC = () => {
     {
       title: '上传文件', // 卡片标题
       description: '在这里上传你的文件', // 卡片描述
-      // 卡片中添加图片 / 视频
-      cover: (
-        <img
-          alt="tour.png"
-          src="https://user-images.githubusercontent.com/5378891/197385811-55df8480-7ff4-44bd-9d43-a7dade598d70.png"
-        />
-      ),
       target: () => ref1.current, // 引导卡片指向的 Dom 元素
     },
     {
@@ -36,7 +30,7 @@ const App: React.FC = () => {
   ];
 
   return (
-    <>
+    <ConfigProvider locale={zhCN}>
       <Button type="primary" onClick={() => setOpen(true)}>
         开始引导
       </Button>
@@ -52,7 +46,7 @@ const App: React.FC = () => {
       </Space>
 
       <Tour open={open} onClose={() => setOpen(false)} steps={steps} />
-    </>
+    </ConfigProvider>
   );
 };
 

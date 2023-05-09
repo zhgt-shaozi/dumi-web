@@ -5,13 +5,7 @@
 
 A react library developed with dumi
 
-## Usage
-
-TODO
-
-## Options
-
-TODO
+[预览地址](https://zhgtt.github.io/dumi-web/)
 
 ## Development
 

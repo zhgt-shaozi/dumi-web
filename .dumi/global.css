@@ -1,7 +1,7 @@
 /** 全局引入 **/
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 
 .dumi-default-header {
   /* z-index: 10; */
@@ -9,7 +9,6 @@
 }
 
 .dumi-default-doc-layout > main {
-  /* max-width: 1392px; */
   max-width: 1520px !important;
 }
 

@@ -21,4 +21,5 @@ order: 2
 
 ## 代码示例
 
-<code src="@/Tour/demo/base.tsx" title="基础用法" description="通过 `content` 自定义水印的内容"></code>
+<code src="@/Tour/demo/base.tsx" title="基础用法" description="通过 `steps` 自定义引导的步骤"></code>
+<code src="@/Tour/demo/placement.tsx" title="自定义引导卡片的位置" description="通过 `placement` 改变引导卡片相对于目标元素的位置"></code>
