@@ -1,9 +1,9 @@
 import { defineConfig } from 'dumi';
-// import type { SiteThemeConfig } from 'dumi-theme-antd-style';
+import type { SiteThemeConfig } from 'dumi-theme-antd-style';
 import { features } from './config/features';
 
 // antd style 主题配置
-const themeConfig = {
+const themeConfig: SiteThemeConfig = {
   name: 'Unio',
   logo: 'https://gw.alipayobjects.com/zos/hitu-asset/c88e3678-6900-4289-8538-31367c2d30f2/hitu-1609235995955-image.png',
   apiHeader: {
@@ -25,33 +25,32 @@ const themeConfig = {
   socialLinks: {
     github: 'https://github.com/zhgtt/dumi-web',
     // zhihu: 'https://xxxx',
-    // yueque: 'https://www.yuque.com/u12312393/olga7q',
+    yueque: 'https://www.yuque.com/u12312393/olga7q',
   },
   // footer: false, // 彻底关闭 footer 底部内容
   footerConfig: {
     bottom: 'Made with ❤️ by 蚂蚁集团 - AFX & 数字科技', // 底部内容
-    // TODO 列配置（自定义配置无效）
-    // columns: false, // 关闭底部链接
+    // columns: false, // 关闭底部链接（NOTE 自定义配置参考 https://dumi-theme-antd-style.arvinx.app/config/footer）
   },
 };
 
 export default defineConfig({
-  // themeConfig,
-  themeConfig: {
-    name: 'Unio',
-    // logo: '',
-    // footer: '',
-    // 右上角拓展链接
-    socialLinks: {
-      github: 'https://github.com/zhgtt/dumi-web',
-      // zhihu: 'https://xxxx',
-      yuque: 'https://www.yuque.com/u12312393/olga7q',
-    },
-  },
+  themeConfig,
+  // themeConfig: {
+  //   name: 'Unio',
+  //   // logo: '',
+  //   // footer: '',
+  //   // 右上角拓展链接
+  //   socialLinks: {
+  //     github: 'https://github.com/zhgtt/dumi-web',
+  //     // zhihu: 'https://xxxx',
+  //     yuque: 'https://www.yuque.com/u12312393/olga7q',
+  //   },
+  // },
 
-  // favicons: [
-  //   'https://gw.alipayobjects.com/zos/hitu-asset/c88e3678-6900-4289-8538-31367c2d30f2/hitu-1609235995955-image.png',
-  // ],
+  favicons: [
+    'https://gw.alipayobjects.com/zos/hitu-asset/c88e3678-6900-4289-8538-31367c2d30f2/hitu-1609235995955-image.png',
+  ],
   outputPath: 'docs-dist', // 自定义输出路径
   base: process.env.NODE_ENV === 'production' ? '/dumi-web/' : '/', // 基础路径（随环境变化）
   publicPath: process.env.NODE_ENV === 'production' ? '/dumi-web/' : '/', // 静态资源路径
@@ -61,7 +60,7 @@ export default defineConfig({
   //   entryFile: './src/index.tsx',
   // },
   alias: {
-    // "@": resolvePath
+    // 'dumi-web': path.resolve(__dirname, 'src'),
   },
   extraPostCSSPlugins: [require('tailwindcss'), require('autoprefixer')], // 额外的 postcss 配置
   extraBabelPlugins: ['@emotion/babel-plugin'], // 额外的 babel 编译插件

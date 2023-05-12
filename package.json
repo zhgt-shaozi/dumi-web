@@ -18,7 +18,6 @@
     "lint": "npm run lint:es && npm run lint:css",
     "lint:css": "stylelint \"{src,test}/**/*.{css,less}\"",
     "lint:es": "eslint \"{src,test}/**/*.{js,jsx,ts,tsx}\"",
-    "prepare": "husky install && dumi setup",
     "prepublishOnly": "father doctor && npm run build",
     "start": "npm run dev"
   },
@@ -47,7 +46,8 @@
   "dependencies": {
     "@emotion/react": "^11.10.8",
     "antd": "^5.4.5",
-    "react-color": "^2.19.3"
+    "react-color": "^2.19.3",
+    "solarlunar-es": "^1.0.9"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.1.2",
@@ -59,7 +59,9 @@
     "@types/react-dom": "^18.0.0",
     "@umijs/lint": "^4.0.0",
     "autoprefixer": "^10.4.14",
+    "clsx": "^1.2.1",
     "dumi": "^2.1.22",
+    "dumi-theme-antd-style": "^0.25.1",
     "eslint": "^8.23.0",
     "father": "^4.1.0",
     "gh-pages": "^5.0.0",

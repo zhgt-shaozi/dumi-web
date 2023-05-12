@@ -1,4 +1,7 @@
-// export { default as Foo } from './Foo';
+// export { default as UCalendar } from './UCalendar';
+import UCalendar from './UCalendar';
+
+export { UCalendar };
 // import Foo from './Foo';
 // import { type FC } from 'react';
 // import { Button } from 'antd';

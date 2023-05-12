@@ -1,3 +1,8 @@
+/**
+ * title: 自定义二维码的大小
+ * description: 通过 `size` 自定义二维码的大小
+ * inherit: true
+ */
 import { QRCode, Slider, Space } from 'antd';
 import React from 'react';
 

@@ -13,5 +13,5 @@
     },
     "types": ["@emotion/react/types/css-prop"]
   },
-  "include": [".dumi/**/*", ".dumirc.ts", "src/**/*"]
+  "include": [".dumi/**/*", ".dumirc.ts", "src/**/*", "*.d.ts"]
 }

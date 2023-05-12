@@ -1,3 +1,8 @@
+/**
+ * title: 不同状态的二维码
+ * description: 通过设置 `status` 的值控制二维码的状态
+ * inherit: true
+ */
 import { ConfigProvider, message, QRCode, Space } from 'antd';
 import zhCN from 'antd/locale/zh_CN';
 import React from 'react';

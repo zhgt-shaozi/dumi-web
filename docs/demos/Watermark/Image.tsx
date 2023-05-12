@@ -1,3 +1,8 @@
+/**
+ * title: 图片水印
+ * description: 通过 `image` 添加图片水印，但是需要设置 `width` 和 `height` 属性
+ * inherit: true
+ */
 import { Result, Watermark } from 'antd';
 import React from 'react';
 

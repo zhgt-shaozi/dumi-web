@@ -1,13 +1,9 @@
-import {
-  Form,
-  Input,
-  InputNumber,
-  Popover,
-  Result,
-  Slider,
-  Space,
-  Watermark,
-} from 'antd';
+/**
+ * title: 水印配置项
+ * description: 对水印的大小、颜色、间距等进行自定义配置
+ * inherit: true
+ */
+import { Form, Input, InputNumber, Popover, Result, Slider, Space, Watermark } from 'antd';
 import React, { useMemo, useState } from 'react';
 import { ChromePicker, type RGBColor } from 'react-color';
 
@@ -24,11 +20,7 @@ const ColorPicker: React.FC<ColorPickerProps> = ({ value, onChange }) => {
       placement="bottomLeft"
       // overlayInnerStyle={{ padding: 0 }}
       content={
-        <ChromePicker
-          color={value}
-          onChange={(color) => onChange?.(color.rgb)}
-          className="!shadow-none"
-        />
+        <ChromePicker color={value} onChange={(color) => onChange?.(color.rgb)} className="!shadow-none" />
       }
     >
       <div
@@ -121,10 +113,7 @@ const App: React.FC = () => {
             </Form.Item>
           </Space>
         </Form.Item>
-        <Form.Item
-          label="Offset 水印距离左上角的偏移量"
-          style={{ marginBottom: 0 }}
-        >
+        <Form.Item label="Offset 水印距离左上角的偏移量" style={{ marginBottom: 0 }}>
           <Space align="baseline">
             <Form.Item name={['offset', 0]}>
               <InputNumber placeholder="offsetLeft" style={{ width: '100%' }} />

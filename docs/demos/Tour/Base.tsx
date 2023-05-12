@@ -1,3 +1,8 @@
+/**
+ * title: 基础用法
+ * description: 通过 `steps` 自定义引导的步骤
+ * inherit: true
+ */
 import { EllipsisOutlined } from '@ant-design/icons';
 import type { TourProps } from 'antd';
 import { Button, ConfigProvider, Divider, Space, Tour } from 'antd';
